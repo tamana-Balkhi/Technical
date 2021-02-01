@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: block;
+    background-color: beige;
+    left: 0px;
+    top: 0px;
+    width: 400px;
+    height: 100vh;
+}
+
+header {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.main-section {
+    margin-top: 30px;
+}
+.main-section header {
+    margin-left: 8px;
+}
+.main-section p {
+    margin-left: 16px;
+}
