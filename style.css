@@ -2,6 +2,40 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    --sidebar-width: 250px;
+}
+
+#header {
+    background-color: rgb(24, 25, 29);
+    color:  rgb(221, 251, 211);
+    display: flex;
+    box-shadow: 2px 0px 4px 4px rgba(24, 24, 24, 0.541);
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+    z-index: 1;
+    margin-left: 0px;
+}
+
+#header .button {
+    font-size: 24px;
+    color:rgb(24, 25, 29);
+    width: 32px;
+    height: 32px;
+    padding-left: 10px;
+    margin: 12px;
+
+    background-color: white;
+}
+
+#header .button:hover {
+    background-color: rgb(159, 236, 135);
+}
+
+#header h1 {
+    margin-left: 10px;
+    text-shadow: 0px 0px 10px rgb(77, 77, 77);
 }
 
 #navbar {
@@ -10,9 +44,10 @@
     position: fixed;
     padding: 20px;
     left: 0;
-    top: 0;
+    top: 56px;
     overflow-x: hidden;
-    width: 250px;
+    width: var(--sidebar-width);
+    box-shadow: 2px 0px 4px 4px rgba(24, 24, 24, 0.397);
     height: 100vh;
 }
 
@@ -29,7 +64,7 @@
 }
 
 #navbar ul li:hover {
-    background-color: blanchedalmond;
+    background-color: rgb(153, 153, 153);
 }
 
 
@@ -40,6 +75,7 @@ header {
 
 #main-doc {
     margin-left: 250px;
+    padding: 32px;
 }
 
 .main-section {
@@ -53,8 +89,10 @@ header {
 
 @media (max-width: 650px) {
     /* hide sidebar */
+    * {
+        --sidebar-width: 0px;
+    }
     #navbar {
-        width: 0px;
         display: none;
     }
     #main-doc {
