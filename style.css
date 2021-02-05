@@ -12,10 +12,8 @@
     box-shadow: 2px 0px 4px 4px rgba(24, 24, 24, 0.541);
     align-items: center;
     position: sticky;
-    top: 0px;
-
+    top: 0;
     z-index: 1;
-    margin-left: 0px;
 }
 
 #header .button {
@@ -25,6 +23,7 @@
     height: 32px;
     padding-left: 10px;
     margin: 12px;
+    z-index: 2;
 
     background-color: white;
 }
@@ -43,16 +42,24 @@
     background-color: beige;
     position: fixed;
     padding: 20px;
+    padding-top: 64px;
     left: 0;
-    top: 56px;
+    top: 0;
     overflow-x: hidden;
     width: var(--sidebar-width);
     box-shadow: 2px 0px 4px 4px rgba(24, 24, 24, 0.397);
     height: 100vh;
+    transition: animate-sidebar 0.5s ease;
 }
 
-#navbar ul {
+#navbar header {
+    padding: 4px 0px;
+    background-color: rgb(194, 246, 207);
+}
+
+#navbar ul{
     list-style-type: none;
+    line-height: 2em;
 }
 
 .nav-link {
@@ -64,7 +71,7 @@
 }
 
 #navbar ul li:hover {
-    background-color: rgb(153, 153, 153);
+    background-color: rgb(207, 207, 207);
 }
 
 
@@ -75,14 +82,15 @@ header {
 
 #main-doc {
     margin-left: 250px;
-    padding: 32px;
+    padding: 0px 32px 32px 32px;
+    line-height: 1.5em;
 }
 
 .main-section {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 60px;
     margin-left: 32px;
 }
+
 .main-section header {
     margin-left: -16px;
 }
@@ -94,6 +102,8 @@ header {
     }
     #navbar {
         display: none;
+        position: fixed;
+        width: 250px;
     }
     #main-doc {
         margin-left: 0;
