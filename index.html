@@ -17,12 +17,16 @@
     <nav id="navbar">
         <header>Java Documentation</header>
         <ul>
-            <li><a class="nav-link" href="#Introduction">introduction</a></li>
+            <li><a class="nav-link" href="#introduction">introduction</a></li>
             <li><a class="nav-link" href="#Java Syntax">Java Syntax</a></li>
             <li><a class="nav-link" href="#Why Use Java?">Why Use Java? </a></li>
             <li><a class="nav-link" href="#The main Method">The main Method</a></li>
             <li><a class="nav-link" href="#Java Variables">Java Variables</a></li>
             <li><a class="nav-link" href="#java_operators">java operators</a></li>
+            <li><a class="nav-link" href="#Java_Conditions_and_If_Statements">Java Conditions and If Statements</a></li>
+            <li><a class="nav-link" href="#Java_Methods">Java Methods</a></li>
+            <li><a class="nav-link" href="#java_operators">java operators</a></li>
+            
 
         </ul>
 
@@ -46,7 +50,7 @@
                      <li>database conection</li>
                  </ul>
         </section>
-        <section class="main-section" id="Why Use Java?">
+        <section class="main-section" id="Why_Use_Java?">
             <header>Why Use Java?</header>
            <ul>
                <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
@@ -60,7 +64,7 @@
         </section>
         
       
-        <section class="main-section" id="Java Syntax">
+        <section class="main-section" id="Java_Syntax">
                 <header>Java Syntax</header>
                 <p>here we will learn about the syntax of java: </p>
                 <code>
@@ -96,7 +100,7 @@
                     <li>five</li>
                 </ul>
         </section>
-        <section class="main-section" id="Java Variables">
+        <section class="main-section" id="Java_Variables">
             <header>Java Variables</header>
             <p>Variables are containers for storing data values.</p>
             <p>In Java, there are different types of variables, for example:</p>
@@ -116,25 +120,66 @@
                     System.out.println(name);</code>
             
         </section>
-        <section id="The main Method" class="main-section">
+        <section id="The_main_Method" class="main-section">
             <header>The main Method</header>
             <p>The  <span style="color: red">main()</span> method is required and you will see it in every Java program:</p>
             <code>public static void main(String[] args)</code>
             
         </section>
-        <section id="java_class_declaration" class="main-section">
-            <header>java class declaration</header>
-            <code>public class name</code>
-        </section>
-        <section id="java_operators" class="main-section">
-            <header>java operators</header>
+        
+        <section id="Java_Operators" class="main-section">
+            <header>Java Operators</header>
             <p>arihmatic operators</p>
             <code>a + b</code>
             <p>java assignment oretors</p>
             <code>int age;<br>age = 5;
             </code>
         </section>
+      <section  class="main-section" id="Java_Conditions_and_If_Statements">
+          <header>Java Conditions and If Statements</header>
+          <p>Java supports the usual logical conditions from mathematics:</p>
+          <ul>
+              <li>Less than: a < b </li>
+              <li> Less than or equal to: a <= b </li>
+              <li>Greater than: a > b</li> 
+               <li> Greater than or equal to: a >= b</li>
+               <li> Equal to a == b</li>
+               <li> Not Equal to: a != b</li>
+          </ul>
+           <p>You can use these conditions to perform different actions for different decisions.</p><br>
+           <h3> Java has the following conditional statements:</h3>
+           <li>Use <span class="var">if</span>  to specify a block of code to be executed, if a specified condition is true </li>
+           <li>Use <span class="var">else</span> to specify a block of code to be executed, if the same condition is false</li>  
+           <li>Use <span class="var">else</span> if to specify a new condition to test, if the first condition is false</li>
+          <li> Use <span class="var">switch</span> to specify many alternative blocks of code to be executed</li></li>
+        <h2>The if Statement</h2>
+        <p>Use the <strong>if</strong> statement to specify a block of Java code to be executed if a condition is <strong>true</strong>.</p>
+        <h3>Syntax</h3>
+        <code>if (condition) {
+              }</code>
+      </section>
+      <section class="main-section" id="Java_Methods">
+          <header>Java Methods</header>
+          <p>A method is a block of code which only runs when it is called.</p>
+          <p>You can pass data, known as parameters, into a method.</p>  
+          <p>Methods are used to perform certain actions, and they are also known as functions.</p>  
+          <p> Why use methods? To reuse code: define the code once, and use it many times.</p>  
+                
+      </section>
+      <section class="main-section" id="Create_a_Method">
+          <header>Create a Method</header>
+          <p>A method must be declared within a class. It is defined with the name of the method, followed by parentheses (). Java provides some pre-defined methods, such as <span class="var">System.out.println()</span> , 
+              but you can also create your own methods to perform certain actions:</p>
+              <h3>example</h3>
+              <code>
+                    public class Main { <br>
+                        static void myMethod() { <br>
+                        }
+                    }
+              </code>
 
+      </section>
+      
 
     </main>
     <script src="script.js"></script>
