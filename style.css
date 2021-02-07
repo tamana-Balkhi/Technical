@@ -84,12 +84,25 @@ header {
         
       }
       
-
+    
 #main-doc {
     margin-left: 250px;
     padding: 0px 32px 32px 32px;
     line-height: 1.5em;
+    
 }
+
+code {
+    display: block;
+    text-align: left;
+    position: relative;
+    word-wrap: normal;
+    line-height: 2;
+    background-color:rgb(211, 211, 211);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+  }
 
 .main-section {
     padding-top: 60px;
